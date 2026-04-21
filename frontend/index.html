@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pokédex</h1>
+
+  <div class="tabs">
+    <button class="tab active" data-gen="1">Gen 1 (Kanto)</button>
+    <button class="tab" data-gen="2">Gen 2 (Johto)</button>
+  </div>
+
+  <div id="type-filters" class="type-filters"></div>
+
+  <div id="pokemon-grid" class="pokemon-grid"></div>
+
+  <!-- Evolution Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="evo-chain" class="evo-chain"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
